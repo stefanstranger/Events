@@ -5,4 +5,4 @@ $CentricDashboard = New-UDDashboard -Title "Hello Centric" -Content {
         New-UDLink -Text 'Sessie informatie' -Url 'https://www.centric.eu/NL/Default/Craft/Tech-event-2018---Infrastructure-track'
     )
 }
-Start-UDDashboard -Port 8585 -Dashboard $CentricDashboard -Name 'HelloCentricDashboard'
+Start-UDDashboard -Port 8585 -Dashboard $CentricDashboard -Name 'HelloCentricDashboard' -Wait
