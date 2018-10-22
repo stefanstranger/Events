@@ -15,6 +15,8 @@ param (
     [Parameter(Mandatory = $true)]
     [string]$acrImageName,
     [Parameter(Mandatory = $true)]
+    [string]$siteName,
+    [Parameter(Mandatory = $true)]
     [string]$ARMTemplateFile
         
 )
