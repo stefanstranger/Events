@@ -1,5 +1,5 @@
 FROM mcr.microsoft.com/powershell:6.1.0-rc.1-ubuntu-18.04
 RUN pwsh -c "Install-Module universaldashboard -Acceptlicense -Force"
-RUN pwsh -c "Get-Content $(System.DefaultWorkingDirectory)/_Centric-UniversalDashboard/universaldashboard/Hello-Centric.ps1 | Set-Content -Path ./tmp/Hello-Centric.ps1 "
+RUN pwsh -c "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/stefanstranger/Events/master/CentricTechEvent2018/Code/Demo01/UniversalDashboard/Hello-Centric.ps1' -Method Get -outfile ./tmp/Hello-Centric.ps1 "
 
 CMD [ "pwsh","-command","& ./tmp/Hello-Centric.ps1" ]
