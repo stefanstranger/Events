@@ -20,5 +20,6 @@ if ($result.failedCount -ne 0) {
 #endregion
 
 <#
+ Run from Demo01 folder
  invoke-pester -Script @{'Path' = './Tests/arm.tests.ps1'; 'Parameters' = @{'Location'='WestEurope';'ResourceGroupName'='centric-rg';'ARMTemplateName'='WebAppContainer.json'}}
 #>
