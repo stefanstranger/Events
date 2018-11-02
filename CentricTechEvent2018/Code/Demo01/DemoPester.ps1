@@ -10,4 +10,4 @@ $params = @{
     outputs      = 'imageNameOutput', 'dockerRegistryUrlOutput', 'linuxFxVersionOutput'
 }
 
-.\armtemplate.test.ps1 @params
+C:\Users\stefstr\Documents\GitHub\Events\CentricTechEvent2018\Code\Demo01\Tests\armtemplate.test.ps1 @params
